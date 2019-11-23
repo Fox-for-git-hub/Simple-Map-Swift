@@ -26,16 +26,26 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="NcE-mi-dps">
                                 <rect key="frame" x="0.0" y="78" width="414" height="784"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITW-1i-AdV">
+                                <rect key="frame" x="373" y="830" width="25" height="24"/>
+                                <connections>
+                                    <action selector="changeMapButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Sk-LR-YnU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="S9w-rS-Iih" secondAttribute="trailing" id="3QE-X9-L1Z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ITW-1i-AdV" secondAttribute="trailing" constant="16" id="4oc-Js-LgD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NcE-mi-dps" secondAttribute="trailing" id="6xv-W6-WmC"/>
                             <constraint firstItem="NcE-mi-dps" firstAttribute="top" secondItem="S9w-rS-Iih" secondAttribute="bottom" id="Evb-15-Mmp"/>
                             <constraint firstItem="S9w-rS-Iih" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Kte-JN-rQX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ITW-1i-AdV" secondAttribute="bottom" constant="8" id="bxo-Sz-lmu"/>
                             <constraint firstItem="S9w-rS-Iih" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hQZ-HP-ERc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NcE-mi-dps" secondAttribute="bottom" id="l2i-CG-cg2"/>
                             <constraint firstItem="NcE-mi-dps" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oZV-m8-9af"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ITW-1i-AdV" secondAttribute="trailing" constant="16" id="zkk-h5-j3z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ITW-1i-AdV" secondAttribute="bottom" constant="8" id="ztt-ti-3Eh"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
